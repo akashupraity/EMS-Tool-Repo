@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "31f7b797-01b2-4f40-b7c7-cb2c9b946d41",
+  "alias": "EmsWebPart",
+  "componentType": "WebPart",
+
+  
+  "version": "*",
+  "manifestVersion": 2,
+
+  
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+  "supportsFullBleed": true,  
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
+    "group": { "default": "Other" },
+    "title": { "default": "EMS" },
+    "description": { "default": "EMS description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "EMS"
+    }
+  }]
+}

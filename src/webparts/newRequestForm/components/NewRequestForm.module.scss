@@ -1,0 +1,282 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+:global {
+  #workbenchPageContent,
+  .CanvasComponent.LCS .CanvasZone {
+    max-width: 100% !important;
+  }
+}
+.newRequestForm {
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+  label{
+    font-family: inherit;
+    font-weight: 600;
+  }
+  .lblClr{
+    font-size: 15px;
+    color: #007bff;
+    font-family: inherit;
+    font-weight: 600;
+  }
+  .deptSection{
+    background-color: #f7f7f7;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+  .viewDeptSection{
+    background-color: #f7f7f7;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+  .newRequestTable{
+    width: 100%;
+    margin-bottom: -20px;
+  }
+  .line {
+    width: 100%;;
+    border-top: 1px solid rgba(0,0,0,.1);
+    display: inline-block;
+  }
+  .noteMsg{
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 13px;
+    color: #a5a3a3;
+  }
+  .lblCtrl{
+    margin-top: 5px;
+  }
+  .btnRt{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .newRequestCmtTable{
+    width: 100%;
+    //margin-top: 30px;
+    margin-top: -18px;
+  }
+  .btnSection{
+    margin-top: 40px;
+  }
+  // .newRequestExpenseTable{
+  //   width: 100%;
+  //   margin-top: -10px;
+  //   margin-bottom: -10px;
+  // }
+  .pr15{
+    padding-right: 15px;
+  }
+  .loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+   // background: rgba(0,0,0,0.75) url('../../Images/loading2.gif') no-repeat center center;
+   background: rgba(0,0,0,0.75) url('https://bbsmidwestcom.sharepoint.com/sites/HR/SiteAssets/ICONS/loading2.gif') no-repeat center center;
+    z-index: 10000;
+  }
+  .lblWidth{
+    width: 80px;
+  }
+  .btnbr9{
+    border-radius: 9px;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  .ml8{
+    margin-left: 8px;
+  }
+  .w50{
+    width:50%;
+    margin-top: 20px;
+  }
+  .h150{
+    height: 150px !important;
+  }
+  .tdw50{
+    width: 20%;
+    padding-left: 15px;
+  }
+  .ms-IconExample{
+    margin-left: 10px;
+  }
+  .star{
+    color: red;
+  }
+  .errMsg{
+    color: red;
+  }
+  .deleteIcon{
+    color: red;
+    margin-top: 15px;
+  }
+  table {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+.addExpenseRow{
+ // margin-top: -7px !important;
+ margin-top: 10px;
+  
+}
+.renderExpenseTbl{
+  display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    margin-top: -10px;
+    background-color: #fdfdfd;
+}
+.formControl {
+  display: block;
+  width: 130%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#add-Row{
+  margin-top: 10px;
+}
+#addDetailRow{
+  padding-bottom: 25px;
+}
+.expenselbl{
+  font-weight: 600;
+  color: white;
+  font-size: initial;
+  background-color:#6492c3 ;
+  padding-left: 5px;
+}
+.cmt{
+  width: 270px;
+  padding-right: 15px;
+}
+.attachFile{
+  width: 150px;
+  padding-right: 15px;
+}
+.attachedFile{
+  width: 500px;
+  padding-right: 15px;
+}
+.itemLine{
+  width: 100%;;
+  border-top: 1px solid rgba(0,0,0,.1);
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.amtLbl{
+  width: 175px;
+}
+.amtTxt{
+    width: 91px;
+    display: block;
+   // width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+ 
+  }
+}

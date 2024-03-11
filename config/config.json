@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ems-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ems/EmsWebPart.js",
+          "manifest": "./src/webparts/ems/EmsWebPart.manifest.json"
+        }
+      ]
+    },
+    "new-request-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/newRequestForm/NewRequestFormWebPart.js",
+          "manifest": "./src/webparts/newRequestForm/NewRequestFormWebPart.manifest.json"
+        }
+      ]
+    },
+    "edit-request-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/editRequestForm/EditRequestFormWebPart.js",
+          "manifest": "./src/webparts/editRequestForm/EditRequestFormWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    },
+    "bootstrap": {
+      "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "bootstrap"
+    }
+  },
+  "localizedResources": {
+    "EmsWebPartStrings": "lib/webparts/ems/loc/{locale}.js",
+    "NewRequestFormWebPartStrings": "lib/webparts/newRequestForm/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "EditRequestFormWebPartStrings": "lib/webparts/editRequestForm/loc/{locale}.js"
+  }
+}
